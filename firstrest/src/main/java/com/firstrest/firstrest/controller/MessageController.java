@@ -26,7 +26,7 @@ public class MessageController {
 
     @GetMapping(":/{num1}/{num2}")
     public Integer Divide(@PathVariable Integer num1, @PathVariable Integer num2) {
-        if(num2.equals(0)){return 0;}
+        if(num1.equals(0)){return 0;}
         Integer result = num2 / num1;
         return result;
     }
